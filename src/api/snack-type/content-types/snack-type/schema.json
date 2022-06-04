@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "snack_types",
+  "info": {
+    "singularName": "snack-type",
+    "pluralName": "snack-types",
+    "displayName": "Snack type"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}
