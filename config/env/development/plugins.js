@@ -5,8 +5,9 @@ module.exports = {
       providerOptions: {
         bucketName: "cracking-snacks",
         publicFiles: true,
-        uniform: false,
+        uniform: true,
         baseUrl: "https://assets.crackingsnacks.com",
+        basePath: "",
       },
     },
   },
