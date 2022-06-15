@@ -423,7 +423,9 @@
           "localized": true
         }
       },
-      "type": "string"
+      "type": "string",
+      "required": true,
+      "unique": true
     },
     "snack_types": {
       "type": "relation",
