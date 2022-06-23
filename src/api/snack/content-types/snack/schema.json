@@ -25,22 +25,6 @@
       "type": "string",
       "required": true
     },
-    "Description": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "richtext"
-    },
-    "Serving_size": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "integer"
-    },
     "Country": {
       "pluginOptions": {
         "i18n": {
@@ -317,7 +301,7 @@
       ],
       "required": true
     },
-    "Number_or_servings": {
+    "Serving_weight": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -436,6 +420,16 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::brand.brand"
+    },
+    "Serving_size": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "required": false,
+      "default": " "
     }
   }
 }
