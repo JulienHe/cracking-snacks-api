@@ -8,7 +8,7 @@
     "description": ""
   },
   "options": {
-    "draftAndPublish": false
+    "draftAndPublish": true
   },
   "pluginOptions": {
     "i18n": {
@@ -416,11 +416,6 @@
       "relation": "oneToMany",
       "target": "api::snack-type.snack-type"
     },
-    "brand": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::brand.brand"
-    },
     "Serving_size": {
       "pluginOptions": {
         "i18n": {
@@ -430,6 +425,22 @@
       "type": "string",
       "required": false,
       "default": " "
+    },
+    "Brand": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "publish_at": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "date"
     }
   }
 }
