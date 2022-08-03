@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "whatsapp_phones",
+  "info": {
+    "singularName": "whatsapp-phone",
+    "pluralName": "whatsapp-phones",
+    "displayName": "Whatsapp phone"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "PhoneNumber": {
+      "type": "string"
+    },
+    "Registered": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}
