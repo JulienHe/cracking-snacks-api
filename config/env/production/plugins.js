@@ -1,4 +1,3 @@
-require("dotenv").config();
 module.exports = {
   upload: {
     config: {
@@ -11,7 +10,7 @@ module.exports = {
           type: "service_account",
           project_id: "vocal-partition-333715",
           private_key_id: process.env.PRIVATE_KEY_ID,
-          private_key: process.env.PRIVATE_GCP,
+          private_key: `-----BEGIN PRIVATE KEY-----\n${process.env.PRIVATE_GCP}\n-----END PRIVATE KEY-----\n`,
           client_email:
             "crackin-snacks@vocal-partition-333715.iam.gserviceaccount.com",
           client_id: "100045114607376465483",
