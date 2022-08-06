@@ -14,3 +14,11 @@ module.exports.getSecrets = async () => {
       .on("error", (e) => reject(e));
   });
 };
+
+// If executed as a script
+if(require.main === module) {
+  (async () => {
+      const secrets = await this.getSecrets()
+      process.stdout.write(JSON.stringify(secrets))
+  })()    
+}
