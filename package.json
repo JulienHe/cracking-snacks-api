@@ -7,9 +7,7 @@
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
-    "strapi": "strapi",
-    "gcp-build": "strapi build",
-    "deploy": "gcloud app deploy app.yaml --project vocal-partition-333715"
+    "strapi": "strapi"
   },
   "dependencies": {
     "@strapi-community/strapi-provider-upload-google-cloud-storage": "^4.1.7",

@@ -2,6 +2,7 @@ const doppler = require("../../../doppler-secret.js");
 
 (async () => {
   const secrets = await doppler.getSecrets();
+  console.log(secrets);
   module.exports = {
     upload: {
       config: {
