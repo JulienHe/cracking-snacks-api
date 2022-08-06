@@ -8,28 +8,24 @@ const doppler = require("../../../doppler-secret.js");
         provider:
           "@strapi-community/strapi-provider-upload-google-cloud-storage",
         providerOptions: {
-          bucketName: "cracking-snacks",
+          bucketName: "assets.crackingsnacks.com",
           publicFiles: true,
           uniform: true,
           baseUrl: "https://assets.crackingsnacks.com",
           basePath: "",
           serviceAccount: {
-            type: "service_account",
-            project_id: "vocal-partition-333715",
+            type: secrets.GCP_TYPE,
+            project_id: secrets.GCP_PROJECT_ID,
             private_key_id: secrets.PRIVATE_KEY_ID,
             private_key: secrets.PRIVATE_GCP,
-            client_email:
-              "crackin-snacks@vocal-partition-333715.iam.gserviceaccount.com",
-            client_id: "100045114607376465483",
-            auth_uri: "https://accounts.google.com/o/oauth2/auth",
-            token_uri: "https://oauth2.googleapis.com/token",
+            client_email: secrets.GCP_CLIENT_EMAIL,
+            client_id: secrets.GCP_CLIENT_ID,
+            auth_uri: secrets.GCP_AUTH_URI,
+            token_uri: secrets.GCP_TOKEN_URI,
             auth_provider_x509_cert_url:
-              "https://www.googleapis.com/oauth2/v1/certs",
-            client_x509_cert_url:
-              "https://www.googleapis.com/robot/v1/metadata/x509/crackin-snacks%40vocal-partition-333715.iam.gserviceaccount.com",
+              secrets.GCP_AUTH_PROVIDER_X509_CERT_URL,
+            client_x509_cert_url: secrets.GCP_CLIENT_X509_CERT_URL,
           },
-          baseUrl: "https://assets.crackingsnacks.com",
-          basePath: "",
         },
       },
     },
