@@ -1,16 +1,12 @@
-const doppler = require("../../../doppler-secret.js");
-(async () => {
-  const secrets = await doppler.getSecrets();
-  console.log(secrets);
-  module.exports = {
+require("dotenv").config();
+module.exports = ({ env }) => ({
+  connection: {
+    client: "postgres",
     connection: {
-      client: "postgres",
-      connection: {
-        host: secrets.PGHOST,
-        database: secrets.PGDATABASE,
-        user: secrets.PGUSER,
-        password: secrets.PGPASSWORD,
-      },
+      host: process.env.PGHOST,
+      database: process.env.PGDATABASE,
+      user: process.env.PGUSER,
+      password: process.env.PGPASSWORD,
     },
-  };
-})();
+  },
+});
