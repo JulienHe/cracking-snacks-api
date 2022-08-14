@@ -23,18 +23,6 @@
       "unique": true,
       "maxLength": 6
     },
-    "BrandCurrentStock": {
-      "type": "float",
-      "default": 0
-    },
-    "BrandPreviousStock": {
-      "type": "float",
-      "default": 0
-    },
-    "SnacksCount": {
-      "type": "integer",
-      "default": 0
-    },
     "stock": {
       "type": "relation",
       "relation": "oneToOne",

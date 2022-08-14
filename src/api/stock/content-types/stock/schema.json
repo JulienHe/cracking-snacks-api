@@ -19,16 +19,24 @@
       "inversedBy": "stock"
     },
     "AverageCaloriesCurrent": {
-      "type": "float"
+      "type": "float",
+      "default": 0
     },
     "AverageCaloriesPrevious": {
-      "type": "float"
+      "type": "float",
+      "default": 0
     },
     "AverageScoreCurrent": {
-      "type": "float"
+      "type": "float",
+      "default": 0
     },
     "AverageScorePrevious": {
-      "type": "float"
+      "type": "float",
+      "default": 0
+    },
+    "SnacksCount": {
+      "type": "integer",
+      "default": 0
     }
   }
 }
