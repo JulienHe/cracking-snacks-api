@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "brands",
+  "info": {
+    "singularName": "brand",
+    "pluralName": "brands",
+    "displayName": "Brand",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "StockName": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "maxLength": 6
+    },
+    "BrandCurrentStock": {
+      "type": "float",
+      "default": 0
+    },
+    "BrandPreviousStock": {
+      "type": "float",
+      "default": 0
+    },
+    "SnacksCount": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}
