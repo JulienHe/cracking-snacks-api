@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "stocks",
+  "info": {
+    "singularName": "stock",
+    "pluralName": "stocks",
+    "displayName": "Stocks",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "brand": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::brand.brand",
+      "inversedBy": "stock"
+    },
+    "AverageCaloriesCurrent": {
+      "type": "float"
+    },
+    "AverageCaloriesPrevious": {
+      "type": "float"
+    },
+    "AverageScoreCurrent": {
+      "type": "float"
+    },
+    "AverageScorePrevious": {
+      "type": "float"
+    }
+  }
+}

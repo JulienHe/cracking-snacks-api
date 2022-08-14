@@ -34,6 +34,12 @@
     "SnacksCount": {
       "type": "integer",
       "default": 0
+    },
+    "stock": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::stock.stock",
+      "mappedBy": "brand"
     }
   }
 }
