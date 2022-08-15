@@ -17,12 +17,6 @@
       "required": true,
       "unique": true
     },
-    "StockName": {
-      "type": "string",
-      "required": true,
-      "unique": true,
-      "maxLength": 6
-    },
     "stock": {
       "type": "relation",
       "relation": "oneToOne",

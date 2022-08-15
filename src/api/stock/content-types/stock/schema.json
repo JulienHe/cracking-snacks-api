@@ -37,6 +37,10 @@
     "SnacksCount": {
       "type": "integer",
       "default": 0
+    },
+    "Name": {
+      "type": "string",
+      "maxLength": 5
     }
   }
 }
