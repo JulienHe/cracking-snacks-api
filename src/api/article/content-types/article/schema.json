@@ -66,6 +66,9 @@
     },
     "articleCategoryColor": {
       "type": "string"
+    },
+    "description": {
+      "type": "string"
     }
   }
 }
