@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "accounts",
+  "info": {
+    "singularName": "account",
+    "pluralName": "accounts",
+    "displayName": "Account"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Email": {
+      "type": "string"
+    },
+    "Provider": {
+      "type": "enumeration",
+      "enum": [
+        "github",
+        "facebook",
+        "google",
+        "discord",
+        "microsoft"
+      ]
+    },
+    "Username": {
+      "type": "string"
+    }
+  }
+}
