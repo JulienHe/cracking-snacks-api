@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_video_youtubes",
+  "info": {
+    "displayName": "Youtube",
+    "icon": "film"
+  },
+  "options": {},
+  "attributes": {
+    "Youtube_Video_ID": {
+      "type": "string",
+      "maxLength": 20,
+      "minLength": 5
+    }
+  }
+}

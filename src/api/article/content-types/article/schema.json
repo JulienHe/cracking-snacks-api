@@ -16,7 +16,8 @@
       "type": "dynamiczone",
       "components": [
         "content.content",
-        "image.medias"
+        "image.medias",
+        "video.youtube"
       ]
     },
     "title": {
