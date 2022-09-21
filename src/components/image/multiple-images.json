@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_image_multiple_images",
+  "info": {
+    "displayName": "Multiple Images",
+    "icon": "images",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}
