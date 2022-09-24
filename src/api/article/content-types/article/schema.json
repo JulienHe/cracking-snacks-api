@@ -18,7 +18,8 @@
         "content.content",
         "video.youtube",
         "image.single-image",
-        "image.multiple-images"
+        "image.multiple-images",
+        "music.spotify"
       ]
     },
     "title": {

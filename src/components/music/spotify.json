@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_music_spotifies",
+  "info": {
+    "displayName": "Spotify",
+    "icon": "music",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Spotify_URL": {
+      "type": "string"
+    },
+    "Compact": {
+      "type": "boolean",
+      "default": true
+    },
+    "Title": {
+      "type": "string"
+    },
+    "Neutral_theme": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}
